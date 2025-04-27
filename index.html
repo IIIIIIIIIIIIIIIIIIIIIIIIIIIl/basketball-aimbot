@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basketball Aimbot</title>
+    <style>
+        body {
+            background-color: #8B0000; /* dark red, not painful */
+            color: blue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 50px;
+        }
+        .slider-container {
+            margin: 20px 0;
+        }
+        input[type="range"] {
+            width: 80%;
+            accent-color: black; /* makes slider black */
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Basketball Aimbot</h1>
+
+    <div class="slider-container">
+        <label for="strength">Aimbot Strength</label>
+        <input type="range" id="strength" name="strength" min="0" max="100">
+    </div>
+
+    <div class="slider-container">
+        <label for="accuracy">Accuracy Adjustment</label>
+        <input type="range" id="accuracy" name="accuracy" min="0" max="100">
+    </div>
+
+    <div class="slider-container">
+        <label for="speed">Speed Boost</label>
+        <input type="range" id="speed" name="speed" min="0" max="100">
+    </div>
+
+    <div class="slider-container">
+        <label for="stealth">Stealth Mode</label>
+        <input type="range" id="stealth" name="stealth" min="0" max="100">
+    </div>
+
+</body>
+</html>
