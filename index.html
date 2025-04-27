@@ -5,7 +5,7 @@
     <title>Basketball Aimbot</title>
     <style>
         body {
-            background-color: #8B0000; /* dark red, not painful */
+            background-color: #8B0000; /* dark red, less painful */
             color: blue;
             font-family: Arial, sans-serif;
             text-align: center;
@@ -16,11 +16,31 @@
             margin-bottom: 50px;
         }
         .slider-container {
-            margin: 20px 0;
+            margin: 30px 0;
         }
         input[type="range"] {
             width: 80%;
-            accent-color: black; /* makes slider black */
+            height: 30px; /* made the slider bigger */
+            accent-color: black; /* slider color */
+            -webkit-appearance: none; /* removes default small style */
+            background: black;
+            border-radius: 15px;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 40px; /* thumb (circle you drag) size */
+            width: 40px;
+            background: blue;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-top: -5px; /* centers the thumb */
+        }
+        input[type="range"]::-moz-range-thumb {
+            height: 40px;
+            width: 40px;
+            background: blue;
+            border-radius: 50%;
+            cursor: pointer;
         }
         label {
             display: block;
